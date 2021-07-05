@@ -3,5 +3,6 @@
 @section('pageTitle', 'Comic')
 
 @section('content')
-{{$comic}}
+<a href="{{route ("comic.index")}}">Torna alla Home</a>
+<a href="{{route ("comic.edit")}}">Modifica</a>
 @endsection

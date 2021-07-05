@@ -3,7 +3,7 @@
 @section('pageTitle', 'CreaComics')
 
 @section('content')
-<form action="{{route("comic.update")}}" method="post">
+<form action="{{route("comic.update") $comic->id}}" method="post">
 @csrf
 
 @method('PUT')
